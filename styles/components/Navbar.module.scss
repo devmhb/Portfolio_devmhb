@@ -1,0 +1,19 @@
+@import "../mixins";
+@import "../variables";
+
+.navbar {
+  @include flex;
+  .logo_con {
+    .author {
+      font-size: 16px;
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+  }
+  .nav_menu {
+    .nav_items {
+      @include flex;
+      gap: 2rem;
+    }
+  }
+}

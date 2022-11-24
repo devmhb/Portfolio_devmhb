@@ -1,0 +1,31 @@
+@mixin btn-fill-Primary {
+  padding: 8px 16px;
+  color: $white;
+  border: 1.5px solid $purple;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background: $purpleHover;
+    transition: background 0.2s ease;
+  }
+}
+
+@mixin btn-fill-secondary($padding) {
+  padding: $padding;
+  border: 1px solid $gray;
+  display: inline-block;
+}
+
+@mixin line($width, $bgcolor) {
+  height: 1px;
+  width: $width;
+  background-color: $bgcolor;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
