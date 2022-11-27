@@ -2,18 +2,33 @@
 @import "../variables";
 
 .navbar {
-  @include flex;
-  .logo_con {
-    .author {
-      font-size: 16px;
-      display: inline-block;
-      margin-left: 0.5rem;
-    }
+  .link_con {
   }
-  .nav_menu {
-    .nav_items {
-      @include flex;
-      gap: 2rem;
+  .nav_wrapper {
+    @include flex;
+    .logo_con {
+      .link_con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .author {
+        font-size: 16px;
+        display: inline-block;
+        margin-left: 0.5rem;
+        cursor: pointer;
+      }
+    }
+    .nav_menu {
+      .nav_items {
+        @include flex;
+        gap: 2rem;
+        span {
+          color: $purple;
+          margin-right: 0.1rem;
+        }
+      }
     }
   }
 }

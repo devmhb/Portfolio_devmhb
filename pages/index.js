@@ -1,7 +1,8 @@
 import Head from "next/head";
-// import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
 
       <div>
         <Layout>
-          <h1>hello world</h1>
+          <Hero />
+          <Projects />
         </Layout>
       </div>
     </div>
