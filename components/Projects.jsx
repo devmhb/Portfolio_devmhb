@@ -11,7 +11,11 @@ const Projects = () => {
         </h1>
         <button className={styles.btn}>View all ⇢</button>
       </div>
-      <ProjectCard />
+      <div className={styles.projectCard_con}>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
     </div>
   );
 };

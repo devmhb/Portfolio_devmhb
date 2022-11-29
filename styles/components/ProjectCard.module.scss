@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../mixins";
+.card_con {
+  .card_wrapper {
+    width: 100%;
+    border: 1px solid $gray;
+    .img_con {
+    }
+    .card_info {
+      padding: 1rem;
+      .uses_lan {
+      }
+      .title {
+      }
+      .desc {
+      }
+      .btn_con {
+        .btn {
+        }
+      }
+    }
+  }
+}

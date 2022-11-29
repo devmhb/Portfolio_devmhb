@@ -1,0 +1,13 @@
+.projects_con {
+  .projects_header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .projectCard_con {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+
+    gap: 1rem;
+  }
+}
