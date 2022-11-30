@@ -1,0 +1,40 @@
+@import "../mixins";
+@import "../variables";
+.about_con {
+  .about_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .title {
+      span {
+        color: $purple;
+      }
+    }
+    .line {
+      @include line(10%, $purple);
+    }
+  }
+  .about_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .row_left {
+      max-width: 60%;
+      .info {
+        .para {
+        }
+      }
+    }
+    .row-right {
+      :nth-child(1) {
+        display: none;
+      }
+      .img_con {
+        .img {
+        }
+      }
+      .dots {
+      }
+    }
+  }
+}

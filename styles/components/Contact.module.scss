@@ -1,0 +1,21 @@
+@import "../variables";
+@import "../mixins";
+
+.contact_con {
+  .contact_header {
+    display: flex;
+    .title {
+      span {
+        color: $purple;
+      }
+    }
+  }
+  .contact_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .row_left {
+      flex-basis: 50%;
+    }
+  }
+}
