@@ -9,6 +9,9 @@
         color: $purple;
       }
     }
+    .line {
+      @include line(30%, $purple);
+    }
   }
   .contact_wrapper {
     display: flex;
