@@ -3,8 +3,11 @@ import styles from "../styles/components/Footer.module.scss";
 import Image from "next/image";
 import logo from "../images/logo primary.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedinIn,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -23,6 +26,7 @@ const Footer = () => {
           <h3>Media</h3>
           <FontAwesomeIcon icon={faGithub} />
           <FontAwesomeIcon icon={faLinkedinIn} />
+          <FontAwesomeIcon icon={faSquareInstagram} />
         </div>
       </div>
     </div>

@@ -3,13 +3,16 @@ import styles from "../styles/components/Contact.module.scss";
 import Image from "next/image";
 import Email from "../images/Email.png";
 
-const Contact = () => {
+const Contact = ({ slashOrHash }) => {
   return (
     <div className={styles.contact_con}>
       <div className={styles.contact_header}>
-        <h1 className={styles.title}>
-          <span>#</span>contacts
-        </h1>
+        <div className={styles.title}>
+          <h1>
+            <span>{slashOrHash}</span>Contact-me
+          </h1>
+          <p>who am i ?</p>
+        </div>
         <p className={styles.line}></p>
       </div>
       <div className={styles.contact_wrapper}>

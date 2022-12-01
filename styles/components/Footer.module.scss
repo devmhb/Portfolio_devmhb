@@ -1,3 +1,9 @@
-.right_row {
-  color: red;
+@import "../variables";
+.footer_con {
+  margin-top: 1rem;
+  border-top: 1px solid $gray;
+  .footer_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

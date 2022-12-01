@@ -4,13 +4,16 @@ import Image from "next/image";
 import Me from "../images/jc-gellidon-E3NUmCScugo-unsplash-removebg-preview(1) 1.png";
 import Dots from "../images/Dots.png";
 
-const About = () => {
+const About = ({ slashOrHash, who }) => {
   return (
     <div className={styles.about_con}>
       <div className={styles.about_header}>
-        <h1 className={styles.title}>
-          <span>#</span>about-me
-        </h1>
+        <div className={styles.title}>
+          <h1>
+            <span>{slashOrHash}</span>about-me
+          </h1>
+          <p>who am i ?</p>
+        </div>
         <p className={styles.line}></p>
       </div>
       <div className={styles.about_wrapper}>
