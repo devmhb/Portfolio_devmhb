@@ -12,8 +12,8 @@ const Hero = () => {
       <div className={styles.hero_wrapper}>
         <div className={styles.row_left}>
           <h1 className={styles.title}>
-            Elias is <span> a web designer</span> and
-            <span> front-end developer</span>
+            Mehedi is <span> front-end </span>
+            developer
           </h1>
           <p className={styles.desc}>
             He crafts responsive websites where technologies meet creativity

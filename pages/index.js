@@ -19,7 +19,9 @@ export default function Home() {
       <div>
         <Layout>
           <Hero />
-          <Projects />
+
+          <Projects viewAll={<button>View All ⇢</button>} />
+
           <Skills />
           <About slashOrHash="#" />
           <Contact slashOrHash="#" />
