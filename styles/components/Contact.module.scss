@@ -4,13 +4,15 @@
 .contact_con {
   .contact_header {
     display: flex;
+    align-items: baseline;
+    gap: 3rem;
     .title {
       span {
         color: $purple;
       }
     }
     .line {
-      @include line(30%, $purple);
+      @include line(15%, $purple);
     }
   }
   .contact_wrapper {
@@ -19,6 +21,15 @@
     align-items: center;
     .row_left {
       flex-basis: 50%;
+    }
+    .row_right {
+      border: 1px solid $gray;
+      padding: 0.5rem 0.8rem;
+      .media_con {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
     }
   }
 }

@@ -2,10 +2,10 @@
 @import "../variables";
 
 .navbar {
-  .link_con {
-  }
   .nav_wrapper {
     @include flex;
+    width: 90%;
+    justify-content: space-between;
     .logo_con {
       .link_con {
         display: flex;
@@ -14,6 +14,7 @@
         justify-content: center;
       }
       .author {
+        color: $gray;
         font-size: 16px;
         display: inline-block;
         margin-left: 0.5rem;
@@ -24,9 +25,17 @@
       .nav_items {
         @include flex;
         gap: 2rem;
-        span {
-          color: $purple;
-          margin-right: 0.1rem;
+        .nav_item {
+          color: $gray;
+          transition: color, transform 0.2s ease;
+          &:hover {
+            color: $gray_light;
+            transform: scale(1.05);
+          }
+          span {
+            color: $purple;
+            margin-right: 0.1rem;
+          }
         }
       }
     }

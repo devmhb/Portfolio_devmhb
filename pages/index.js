@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
+import ProjectsCard from "../components/ProjectsCard";
 import Skills from "../components/Skills";
 import About from "../components/About";
 import Contact from "../components/Contact";
@@ -19,9 +19,7 @@ export default function Home() {
       <div>
         <Layout>
           <Hero />
-
-          <Projects viewAll={<button>View All ⇢</button>} />
-
+          <ProjectsCard viewAll={<button>View All ⇢</button>} />
           <Skills />
           <About slashOrHash="#" />
           <Contact slashOrHash="#" />

@@ -1,7 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import styles from "../styles/components/Contact.module.scss";
 import Image from "next/image";
 import Email from "../images/Email.png";
+import { faMobileRetro } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = ({ slashOrHash }) => {
   return (
@@ -24,9 +27,16 @@ const Contact = ({ slashOrHash }) => {
         </div>
         <div className={styles.row_right}>
           <h3>Message me here</h3>
-          <Image src={Email} alt="email" height="" width="" />
-          <p>mehedibuiyan734@gmail.com</p>
-          <p>+88 019108-19923</p>
+          <div className={styles.media_con}>
+            <Image src={Email} alt="email" height="" width="" />
+            <p>mehedibuiyan734@gmail.com</p>
+          </div>
+          <div className={styles.media_con}>
+            <p>
+              <FontAwesomeIcon icon={faMobileRetro} />
+            </p>
+            <p>+88 019108-19923</p>
+          </div>
         </div>
       </div>
     </div>

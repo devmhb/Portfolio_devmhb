@@ -29,5 +29,10 @@
 @mixin flex {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+@mixin borderBottom {
+  border-bottom: 1px solid $gray;
+  padding-bottom: 0.3rem;
 }

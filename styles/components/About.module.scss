@@ -1,39 +1,53 @@
 @import "../mixins";
 @import "../variables";
 .about_con {
+  width: 100%;
   .about_header {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: baseline;
+    gap: 3rem;
     .title {
       span {
         color: $purple;
       }
     }
     .line {
-      @include line(10%, $purple);
+      @include line(15%, $purple);
     }
   }
   .about_wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     .row_left {
       max-width: 60%;
       .info {
         .para {
+          line-height: 1.5rem;
         }
+      }
+      .btn {
+        @include btn-fill-Primary;
       }
     }
-    .row-right {
-      :nth-child(1) {
-        display: none;
+
+    .row_right {
+      position: relative;
+      .dots1 {
+        position: absolute;
+        top: 5%;
+        left: 0%;
       }
-      .img_con {
-        .img {
-        }
+      .dots2 {
+        position: absolute;
+        top: 50%;
+        left: 40%;
       }
-      .dots {
+      .dots3 {
+        position: absolute;
+        top: 90%;
+        right: 5%;
       }
     }
   }

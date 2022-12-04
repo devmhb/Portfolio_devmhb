@@ -1,27 +1,33 @@
 @import "../variables";
 @import "../mixins";
 .card_con {
+  width: 100%;
+  justify-content: space-between;
   display: flex;
-  gap: 1.5rem;
   .card_wrapper {
-    flex-basis: 25%;
-    width: 100%;
     border: 1px solid $gray;
     .img_con {
       img {
-        width: 350px;
+        width: 400px;
+        height: 200px;
+        @include borderBottom;
+        padding-bottom: 0;
       }
     }
     .card_info {
       padding: 1rem;
       .uses_lan {
+        width: 100%;
+        @include borderBottom;
       }
       .title {
       }
       .desc {
       }
       .btn_con {
+        text-align: right;
         .btn {
+          @include btn-fill-Primary;
         }
       }
     }

@@ -3,4 +3,11 @@
 .container {
   color: $white;
   padding: 2rem 3rem;
+  button {
+    border: none;
+    background-color: transparent;
+    color: $white;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
 }

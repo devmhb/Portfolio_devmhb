@@ -5,9 +5,14 @@ body {
   margin: 0;
   font-family: "Fira Code", monospace;
   background-color: #282c33;
+  scroll-behavior: smooth;
 }
 
 li {
   list-style: none;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }

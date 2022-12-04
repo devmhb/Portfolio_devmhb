@@ -12,8 +12,8 @@ const Hero = () => {
       <div className={styles.hero_wrapper}>
         <div className={styles.row_left}>
           <h1 className={styles.title}>
-            Mehedi is <span> front-end </span>
-            developer
+            Mehedi is a<span> front-end </span>
+            developer.
           </h1>
           <p className={styles.desc}>
             He crafts responsive websites where technologies meet creativity
@@ -25,8 +25,8 @@ const Hero = () => {
           <div className={styles.img_con}>
             <Image
               src={Outline}
-              height="100"
-              width="100"
+              height="200"
+              width="200"
               alt="outline"
               className={styles.outline}
             />
@@ -37,7 +37,13 @@ const Hero = () => {
               alt="dots"
               className={styles.dots}
             />
-            <Image src={heroImg} height="" width="" alt="author" />
+            <Image
+              src={heroImg}
+              height=""
+              width=""
+              alt="author"
+              className={styles.author_img}
+            />
           </div>
         </div>
       </div>
