@@ -12,7 +12,7 @@ const ProjectCard = () => {
       {data.map((data) => (
         <div className={styles.card_wrapper}>
           <div className={styles.img_con}>
-            <Image src={data?.image} height="" width="" alt="" />
+            <Image src={data?.image} height="" width="" alt="project_pic" />
           </div>
           <div className={styles.card_info}>
             <p className={styles.uses_lan}>{data?.uses}</p>

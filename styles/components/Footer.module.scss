@@ -2,8 +2,24 @@
 .footer_con {
   margin-top: 1rem;
   border-top: 1px solid $gray;
+  padding-top: 2rem;
   .footer_wrapper {
     display: flex;
     justify-content: space-evenly;
+    .row_left {
+      .logo_con {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+    .row_right {
+      .icon_con {
+        a {
+          margin-left: 1rem;
+          color: $gray;
+        }
+      }
+    }
   }
 }

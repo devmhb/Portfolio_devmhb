@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/components/Footer.module.scss";
 import Image from "next/image";
 import logo from "../images/logo primary.svg";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -15,18 +16,30 @@ const Footer = () => {
       <div className={styles.footer_wrapper}>
         <div className={styles.row_left}>
           <div className={styles.logo_con}>
-            <Image src={logo} height="" width="" alt="logo" />
-            Mehedi
-            <div className={styles.desc}>
-              Web designer and front-end developer based in Ukraine
-            </div>
+            <Image src={logo} height="20" width="20" alt="logo" />
+            <h3>Mehedi</h3>
+          </div>
+
+          <div className={styles.desc}>
+            Web designer and front-end developer based in Ukraine
           </div>
         </div>
+
         <div className={styles.row_right}>
           <h3>Media</h3>
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faLinkedinIn} />
-          <FontAwesomeIcon icon={faSquareInstagram} />
+          <div className={styles.icon_con}>
+            <Link href="https://github.com/devmhb" target="_blank">
+              <FontAwesomeIcon icon={faGithub} />
+            </Link>
+
+            <Link href="https://www.linkedin.com/in/devmhb/" target="_blank">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </Link>
+
+            <Link href="https://www.instagram.com/devmhb/" target="_blank">
+              <FontAwesomeIcon icon={faSquareInstagram} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

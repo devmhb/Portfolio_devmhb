@@ -1,0 +1,40 @@
+@import "../variables";
+@import "../mixins";
+
+.container {
+  padding: 1.5rem 0rem;
+  .header {
+    .title {
+      span {
+        color: $purple;
+      }
+    }
+  }
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .items {
+      flex-basis: 60%;
+      display: flex;
+      align-items: center;
+      .item {
+        @include btn-fill-secondary(0.3rem 0.5rem);
+        margin-right: 0.5rem;
+      }
+    }
+
+    .img_con {
+      .outline {
+        position: absolute;
+        top: 5%;
+        right: 20%;
+      }
+      .dots {
+        position: absolute;
+        top: 10%;
+        right: -5%;
+      }
+    }
+  }
+}

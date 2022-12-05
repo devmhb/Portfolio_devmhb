@@ -1,15 +1,18 @@
 @import "../variables";
 @import "../mixins";
 .card_con {
-  width: 100%;
-  justify-content: space-between;
+  padding: 1.5rem 0rem;
   display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
+  @media (max-width: 768px) {
+  }
   .card_wrapper {
     border: 1px solid $gray;
     .img_con {
       img {
-        width: 400px;
-        height: 200px;
+        width: 500px;
+        height: 185px;
         @include borderBottom;
         padding-bottom: 0;
       }
