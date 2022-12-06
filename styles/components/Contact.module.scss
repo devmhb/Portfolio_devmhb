@@ -2,6 +2,8 @@
 @import "../mixins";
 
 .contact_con {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   .contact_header {
     display: flex;
     align-items: baseline;
@@ -17,10 +19,18 @@
   }
   .contact_wrapper {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     .row_left {
       flex-basis: 50%;
+      @media (max-width: 668px) {
+        flex-basis: 100%;
+      }
+
+      .desc {
+        line-height: 1.7rem;
+      }
     }
     .row_right {
       border: 1px solid $gray;

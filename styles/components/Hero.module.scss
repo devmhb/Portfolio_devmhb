@@ -2,15 +2,14 @@
 @import "../variables";
 
 .hero_con {
-  max-height: 100vh;
   max-width: 100%;
   .hero_wrapper {
-    width: 100%;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
     .row_left {
-      width: 100%;
+      max-width: 100%;
       .title {
         span {
           color: $purple;
@@ -37,10 +36,14 @@
           position: absolute;
           top: 10%;
           left: -10%;
+          z-index: 0;
+          @media (max-width: 622px) {
+            display: none;
+          }
         }
         .author_img {
           border-bottom: 1px solid $gray;
-          z-index: 99;
+          width: 100%;
         }
       }
     }
@@ -58,6 +61,9 @@
     .quote_writer {
       text-align: right;
       margin-top: -0.9rem;
+      fieldset {
+        border: 1px solid;
+      }
     }
   }
 }

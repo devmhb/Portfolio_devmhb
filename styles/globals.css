@@ -7,7 +7,9 @@ body {
   background-color: #282c33;
   scroll-behavior: smooth;
 }
-
+/* *{
+  border: 1px solid aqua;
+} */
 li {
   list-style: none;
   cursor: pointer;

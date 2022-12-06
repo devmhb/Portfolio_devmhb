@@ -2,6 +2,7 @@
 @import "../variables";
 .about_con {
   width: 100%;
+
   .about_header {
     display: flex;
     align-items: baseline;
@@ -17,14 +18,21 @@
   }
   .about_wrapper {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 968px) {
+      justify-content: center;
+    }
     .row_left {
       max-width: 60%;
+      @media (max-width: 968px) {
+        max-width: 100%;
+        margin-bottom: 2rem;
+      }
       .info {
         .para {
-          line-height: 1.5rem;
+          line-height: 1.7rem;
         }
       }
       .btn {

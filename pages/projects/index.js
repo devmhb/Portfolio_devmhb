@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Layout from "../../components/Layout";
-import ProjectCard from "../../components/ProjectCard";
+import ProjectsCard from "../../components/ProjectsCard";
 import styles from "../../styles/ProjectsPage.module.scss";
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <ProjectCard />
+        <ProjectsCard slashOrHash="/" />
       </Layout>
     </div>
   );

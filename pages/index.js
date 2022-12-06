@@ -19,7 +19,7 @@ export default function Home() {
       <div>
         <Layout>
           <Hero />
-          <ProjectsCard viewAll={<button>View All ⇢</button>} />
+          <ProjectsCard viewAll={<button>View All ⇢</button>} slashOrHash="#" />
           <Skills />
           <About slashOrHash="#" />
           <Contact slashOrHash="#" />

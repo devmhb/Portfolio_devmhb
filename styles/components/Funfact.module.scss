@@ -15,9 +15,12 @@
     display: flex;
     justify-content: space-between;
     .items {
-      flex-basis: 60%;
+      flex-basis: 70%;
       display: flex;
       align-items: center;
+      @media (max-width: 768px) {
+        flex-basis: 80%;
+      }
       .item {
         @include btn-fill-secondary(0.3rem 0.5rem);
         margin-right: 0.5rem;
@@ -29,6 +32,9 @@
         position: absolute;
         top: 5%;
         right: 20%;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
       .dots {
         position: absolute;

@@ -3,8 +3,6 @@ import styles from "../styles/components/ProjectCard.module.scss";
 import Image from "next/image";
 import { data } from "./data";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTentArrowLeftRight } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = () => {
   return (
@@ -20,10 +18,7 @@ const ProjectCard = () => {
             <p className={styles.desc}>{data?.subTitle}</p>
             <div className={styles.btn_con}>
               <Link href={data?.link} target="_blank">
-                <button className={styles.btn}>
-                  Live
-                  <FontAwesomeIcon icon={faTentArrowLeftRight} />
-                </button>
+                <button className={styles.btn}>Live ↔ </button>
               </Link>
             </div>
           </div>

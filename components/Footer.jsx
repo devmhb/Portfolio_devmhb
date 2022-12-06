@@ -42,6 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className={styles.copyright}>© Copyright 2022. Made by Mehedi</p>
     </div>
   );
 };

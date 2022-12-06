@@ -21,6 +21,9 @@
       }
       .line {
         @include line(10rem, $purple);
+        @media (max-width: 668px) {
+          display: none;
+        }
       }
     }
   }
