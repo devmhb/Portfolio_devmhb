@@ -42,6 +42,11 @@
 
     .row_right {
       position: relative;
+      .author {
+        @media (max-width: 668px) {
+          width: 90%;
+        }
+      }
       .dots1 {
         position: absolute;
         top: 5%;

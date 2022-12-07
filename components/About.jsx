@@ -37,7 +37,13 @@ const About = ({ slashOrHash }) => {
 
         <div className={styles.row_right}>
           <div className={styles.img_con}>
-            <Image src={Me} height="" width="" alt="me" />
+            <Image
+              src={Me}
+              height=""
+              width=""
+              alt="me"
+              className={styles.author}
+            />
           </div>
           <Image
             src={Dots}
