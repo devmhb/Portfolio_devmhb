@@ -5,6 +5,8 @@ import Image from "next/image";
 import logo from "../images/logo primary.svg";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserXmark } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faGithub,
   faLinkedinIn,
@@ -55,6 +57,9 @@ const Navbar = () => {
 
           {burger && (
             <div className={styles.burger_con}>
+              <p className={styles.cross_btn} onClick={handleNav}>
+                <FontAwesomeIcon icon={faUserXmark} />
+              </p>
               <ul className={styles.burger_items}>
                 <Link href="/">
                   <li className={styles.nav_item}>

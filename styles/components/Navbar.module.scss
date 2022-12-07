@@ -44,18 +44,17 @@
       }
       .burger_con {
         .burger_items {
-          height: 100vh;
-          width: 100vw;
-          background-color: red;
+          height: 80vh;
+          background-color: $background;
           position: absolute;
-          top: -100%;
-          right: 100%;
+          right: 0%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          z-index: 99999;
+          z-index: 1;
+          padding: 1rem 2rem;
           li {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: $gray;
           }
           .icon_con {
@@ -67,9 +66,15 @@
             display: none;
           }
         }
+        .cross_btn {
+          cursor: pointer;
+        }
       }
 
       .humBurger {
+        cursor: pointer;
+        z-index: 99;
+        overflow: hidden;
         @media (min-width: 768px) {
           display: none;
         }

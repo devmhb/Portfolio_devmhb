@@ -9,7 +9,6 @@ import {
   faLinkedinIn,
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-
 const Footer = () => {
   return (
     <div className={styles.footer_con}>
