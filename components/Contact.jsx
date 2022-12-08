@@ -12,7 +12,7 @@ const Contact = ({ slashOrHash }) => {
       <div className={styles.contact_header}>
         <div className={styles.title}>
           <h1>
-            <span>{slashOrHash}</span>Contact-me
+            <span>{slashOrHash}</span>contact-me
           </h1>
           <p>who am i ?</p>
         </div>
@@ -29,13 +29,15 @@ const Contact = ({ slashOrHash }) => {
           <h3>Message me here</h3>
           <div className={styles.media_con}>
             <Image src={Email} alt="email" height="" width="" />
-            <p>mehedibuiyan734@gmail.com</p>
+            <a href="mailto:mehedibuiyan734@gmail.com">
+              mehedibuiyan734@gmail.com
+            </a>
           </div>
           <div className={styles.media_con}>
             <p>
               <FontAwesomeIcon icon={faMobileRetro} />
             </p>
-            <p>+88 019108-19923</p>
+            <a href="tel:+8801910819923">+88019108-19923</a>
           </div>
         </div>
       </div>
