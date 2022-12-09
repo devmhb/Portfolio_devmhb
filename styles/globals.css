@@ -28,3 +28,53 @@ ul {
 a {
   text-decoration: none;
 }
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+.btnBorder::after,
+.btnBorder::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  visibility: hidden;
+}
+
+.btnBorder::after {
+  bottom: -3px;
+  right: -3px;
+  border-left: 3px solid #222222;
+  border-bottom: 3px solid #222222;
+  transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
+}
+
+.btnBorder::before {
+  top: -3px;
+  left: -3px;
+  border-top: 3px solid #222222;
+  border-right: 3px solid #222222;
+  transition: width 0.1s ease 0.3s, height 0.1s ease 0.2s, visibility 0s 0.4s;
+}
+
+.btnBorder:hover {
+  animation: pulse 1s ease-out 0.4s;
+  color: #222222;
+}
+
+.btnBorder:hover::after,
+.btnBorder:hover::before {
+  width: calc(100% + 3px);
+  height: calc(100% + 3px);
+  visibility: visible;
+  transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
+}
+
+.btnBorder:hover::after {
+  transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
+}

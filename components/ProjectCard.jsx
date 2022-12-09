@@ -8,7 +8,7 @@ const ProjectCard = () => {
   return (
     <div className={styles.card_con}>
       {data.map((data) => (
-        <div className={styles.card_wrapper}>
+        <div className={styles.card_wrapper} key={data?.title}>
           <div className={styles.img_con}>
             <Image src={data?.image} height="" width="" alt="project_pic" />
           </div>
@@ -18,7 +18,9 @@ const ProjectCard = () => {
             <p className={styles.desc}>{data?.subTitle}</p>
             <div className={styles.btn_con}>
               <Link href={data?.link} target="_blank">
-                <button className={styles.btn}>Live ↔ </button>
+                <button className={`${styles.btn} btn btnBorder`}>
+                  Live ↔
+                </button>
               </Link>
             </div>
           </div>

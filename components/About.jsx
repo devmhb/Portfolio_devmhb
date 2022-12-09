@@ -32,7 +32,7 @@ const About = ({ slashOrHash }) => {
               newest technologies and frameworks.
             </p>
           </div>
-          <button className={styles.btn}>Read more →</button>
+          <button className={`${styles.btn} btn btnBorder`}>Read more →</button>
         </div>
 
         <div className={styles.row_right}>

@@ -18,7 +18,7 @@ const Hero = () => {
           <p className={styles.desc}>
             He crafts responsive websites where technologies meet creativity
           </p>
-          <button className={styles.btn}>Contact me!</button>
+          <button className={`${styles.btn} btn btnBorder`}>Contact me!</button>
         </div>
 
         <div className={styles.row_right}>
@@ -51,7 +51,7 @@ const Hero = () => {
         <div className={styles.quote}>
           <fieldset>
             <legend>
-              <Image src={comma} height="" width="" />
+              <Image src={comma} height="" width="" alt="comma" />
             </legend>
             <p>With great power comes great electricity bill</p>
           </fieldset>
@@ -59,7 +59,7 @@ const Hero = () => {
         <div className={styles.quote_writer}>
           <fieldset>
             <legend>
-              <Image src={comma} height="" width="" />
+              <Image src={comma} height="" width="" alt="comma" />
             </legend>
             <p>-Dr.Who</p>
           </fieldset>
