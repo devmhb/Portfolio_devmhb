@@ -19,9 +19,7 @@ const Footer = () => {
             <h3>Mehedi</h3>
           </div>
 
-          <div className={styles.desc}>
-            Web designer and front-end developer based in Ukraine
-          </div>
+          <div className={styles.desc}>Mehedi is a front end developer</div>
         </div>
 
         <div className={styles.row_right}>
