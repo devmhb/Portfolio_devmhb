@@ -1,12 +1,19 @@
 import React from "react";
+import Link from "next/link";
 import styles from "../styles/components/About.module.scss";
 import Image from "next/image";
 import Me from "../images/jc-gellidon-E3NUmCScugo-unsplash-removebg-preview(1) 1.png";
 import Dots from "../images/Dots.png";
+import { motion } from "framer-motion";
 
-const About = ({ slashOrHash }) => {
+const About = ({ slashOrHash, readMore }) => {
   return (
-    <div className={styles.about_con}>
+    <motion.div
+      className={styles.about_con}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className={styles.about_header}>
         <div className={styles.title}>
           <h1>
@@ -32,7 +39,7 @@ const About = ({ slashOrHash }) => {
               newest technologies and frameworks.
             </p>
           </div>
-          <button className={`${styles.btn} btn btnBorder`}>Read more →</button>
+          <Link href="/about">{readMore}</Link>
         </div>
 
         <div className={styles.row_right}>
@@ -68,7 +75,7 @@ const About = ({ slashOrHash }) => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

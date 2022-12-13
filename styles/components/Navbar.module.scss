@@ -31,11 +31,14 @@
         @include flex;
         gap: 2rem;
         .nav_item {
+          position: relative;
           color: $gray;
           transition: color, transform 0.2s ease;
+
           &:hover {
             color: $gray_light;
             transform: scale(1.05);
+            width: 1rem;
           }
           span {
             color: $purple;
@@ -66,9 +69,13 @@
     justify-content: space-around;
     z-index: 1;
     padding: 1rem 2rem;
-    li {
+    .nav_item {
       font-size: 1.8rem;
       color: $gray;
+
+      span {
+        color: $purple;
+      }
     }
     .icon_con {
       display: flex;

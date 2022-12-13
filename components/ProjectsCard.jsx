@@ -2,10 +2,16 @@ import React from "react";
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 import styles from "../styles/components/ProjectsCard.module.scss";
+import { motion } from "framer-motion";
 
 const ProjectsCard = ({ viewAll, slashOrHash }) => {
   return (
-    <div className={styles.projects_con}>
+    <motion.div
+      className={styles.projects_con}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className={styles.projects_header}>
         <div className={styles.title_wrapper}>
           <h1 className={styles.title}>
@@ -18,7 +24,7 @@ const ProjectsCard = ({ viewAll, slashOrHash }) => {
         </Link>
       </div>
       <ProjectCard />
-    </div>
+    </motion.div>
   );
 };
 

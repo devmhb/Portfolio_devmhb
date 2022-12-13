@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 .container {
   color: $white;
@@ -13,5 +14,8 @@
     color: $white;
     cursor: pointer;
     font-size: 1.2rem;
+  }
+  .btn {
+    @include btn-fill-Primary;
   }
 }

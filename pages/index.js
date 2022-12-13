@@ -21,7 +21,14 @@ export default function Home() {
           <Hero />
           <ProjectsCard viewAll={<button>View All ⇢</button>} slashOrHash="#" />
           <Skills />
-          <About slashOrHash="#" />
+          <About
+            slashOrHash="#"
+            readMore={
+              <button className={`${styles.btn} btn btnBorder`}>
+                Read more ⇢
+              </button>
+            }
+          />
           <Contact slashOrHash="#" />
         </Layout>
       </div>

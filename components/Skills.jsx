@@ -4,10 +4,16 @@ import outline from "../images/logo secondary.svg";
 import dots from "../images/Dots.png";
 import rect from "../images/Rectangle 24.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className={styles.skills_con}>
+    <motion.div
+      className={styles.skills_con}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className={styles.skills_header}>
         <h1 className={styles.title}>
           <span>#</span>skills
@@ -71,7 +77,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

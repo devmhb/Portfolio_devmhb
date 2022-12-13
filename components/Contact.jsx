@@ -5,10 +5,16 @@ import Image from "next/image";
 import Email from "../images/Email.png";
 import { faMobileRetro } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 const Contact = ({ slashOrHash }) => {
   return (
-    <div className={styles.contact_con}>
+    <motion.div
+      className={styles.contact_con}
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className={styles.contact_header}>
         <div className={styles.title}>
           <h1>
@@ -41,7 +47,7 @@ const Contact = ({ slashOrHash }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

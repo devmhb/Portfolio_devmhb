@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "../images/logo primary.svg";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 import {
   faGithub,
@@ -27,6 +28,21 @@ const Navbar = () => {
     }
   }, [burger]);
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.5,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.nav_wrapper}>
@@ -40,28 +56,33 @@ const Navbar = () => {
         </Link>
         {burger && (
           <div className={styles.burger_con}>
-            <ul className={styles.burger_items}>
+            <motion.ul
+              className={styles.burger_items}
+              variants={container}
+              initial="hidden"
+              animate="show"
+            >
               <Link href="/">
-                <li className={styles.nav_item}>
+                <motion.li className={styles.nav_item} variants={item}>
                   <span>#</span>home
-                </li>
+                </motion.li>
               </Link>
               <Link href="/about">
-                <li className={styles.nav_item}>
+                <motion.li className={styles.nav_item} variants={item}>
                   <span>#</span>about
-                </li>
+                </motion.li>
               </Link>
               <Link href="./projects">
-                <li className={styles.nav_item}>
+                <motion.li className={styles.nav_item} variants={item}>
                   <span>#</span>projects
-                </li>
+                </motion.li>
               </Link>
               <Link href="/contacts">
-                <li className={styles.nav_item}>
+                <motion.li className={styles.nav_item} variants={item}>
                   <span>#</span>contacts
-                </li>
+                </motion.li>
               </Link>
-              <div className={styles.icon_con}>
+              <motion.div className={styles.icon_con} variants={item}>
                 <Link href="https://github.com/devmhb" target="_blank">
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
@@ -76,8 +97,8 @@ const Navbar = () => {
                 <Link href="https://www.instagram.com/devmhb/" target="_blank">
                   <FontAwesomeIcon icon={faSquareInstagram} />
                 </Link>
-              </div>
-            </ul>
+              </motion.div>
+            </motion.ul>
           </div>
         )}
         <div

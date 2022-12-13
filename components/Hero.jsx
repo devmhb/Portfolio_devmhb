@@ -5,10 +5,17 @@ import Dots from "../images/Dots.png";
 import heroImg from "../images/hero_img.png";
 import comma from "../images/“.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className={styles.hero_con}>
+    <motion.div
+      className={styles.hero_con}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className={styles.hero_wrapper}>
         <div className={styles.row_left}>
           <h1 className={styles.title}>
@@ -18,7 +25,11 @@ const Hero = () => {
           <p className={styles.desc}>
             He crafts responsive websites where technologies meet creativity
           </p>
-          <button className={`${styles.btn} btn btnBorder`}>Contact me!</button>
+          <Link href="/contacts">
+            <button className={`${styles.btn} btn btnBorder`}>
+              Contact me!
+            </button>
+          </Link>
         </div>
 
         <div className={styles.row_right}>
@@ -65,7 +76,7 @@ const Hero = () => {
           </fieldset>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

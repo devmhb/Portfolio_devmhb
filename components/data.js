@@ -5,23 +5,22 @@ import project3 from "../images/Simple-portfolio.png";
 export const data = [
   {
     image: project1,
-    uses: "HTML SASS JavaScript Next.js",
-    title: "ChartNode",
-    subTitle: "This is subtitle",
+    uses: "HTML SASS Next.js Hypergraph",
+    title: "Blog Application",
     link: "https://blog-site-devmhb.netlify.app",
   },
   {
     image: project2,
-    uses: " HTML SASS JavaScript Next.js",
-    title: "ChartNode",
-    subTitle: "This is subtitle",
+    uses: " HTML React.js Next.js Sanity",
+    title: "Ecommerce",
+    // subTitle: "In this project i used React.js, Next.js, Sanity",
     link: "https://ecommerce-devmhb.netlify.app",
   },
   {
     image: project3,
-    uses: " HTML SASS JavaScript Next.js",
-    title: "ChartNode",
-    subTitle: "This is subtitle",
+    uses: " HTML SASS JavaScript",
+    title: "Portfolio",
+    // subTitle: " ",
     link: "https://samirakhatun.netlify.app",
   },
 ];
