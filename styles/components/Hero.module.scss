@@ -21,6 +21,10 @@
       .btn {
         @include btn-fill-Primary;
       }
+      .cta_btns {
+        display: flex;
+        gap: 10px;
+      }
     }
     .row_right {
       position: relative;

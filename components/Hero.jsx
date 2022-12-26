@@ -9,6 +9,20 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Hero = () => {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("Mehedi-Hasan-Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Mehedi-Hasan-Resume.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <motion.div
       className={styles.hero_con}
@@ -25,11 +39,19 @@ const Hero = () => {
           <p className={styles.desc}>
             He crafts responsive websites where technologies meet creativity
           </p>
-          <Link href="/contacts">
-            <button className={`${styles.btn} btn btnBorder`}>
-              Contact me!
+          <div className={styles.cta_btns}>
+            <Link href="/contacts">
+              <button className={`${styles.btn} btn btnBorder`}>
+                Contact me!
+              </button>
+            </Link>
+            <button
+              onClick={onButtonClick}
+              className={`${styles.btn} btn btnBorder`}
+            >
+              Resume
             </button>
-          </Link>
+          </div>
         </div>
 
         <div className={styles.row_right}>
