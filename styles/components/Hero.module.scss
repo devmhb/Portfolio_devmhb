@@ -20,10 +20,14 @@
       }
       .btn {
         @include btn-fill-Primary;
+        width: fit-content;
       }
       .cta_btns {
         display: flex;
         gap: 10px;
+        @media screen and (max-width: 499px) {
+          flex-direction: column;
+        }
       }
     }
     .row_right {
