@@ -28,7 +28,7 @@ const Hero = () => {
       className={styles.hero_con}
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       <div className={styles.hero_wrapper}>
         <div className={styles.row_left}>

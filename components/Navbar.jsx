@@ -33,7 +33,7 @@ const Navbar = () => {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.5,
+        delayChildren: 0.4,
       },
     },
   };
