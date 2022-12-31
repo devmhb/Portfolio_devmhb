@@ -1,4 +1,4 @@
-import project1 from "../images/Blog-Application.png";
+import project1 from "../images/Blog-Log.png";
 import project2 from "../images/My-Store.png";
 import project3 from "../images/Simple-portfolio.png";
 

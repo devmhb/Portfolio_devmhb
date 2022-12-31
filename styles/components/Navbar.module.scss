@@ -38,6 +38,7 @@
           &:hover {
             color: $gray_light;
             transform: scale(1.05);
+            width: 1rem;
           }
           span {
             color: $purple;
@@ -87,6 +88,9 @@
         font-size: 1.8rem;
       }
     }
+    // @media (min-width: 768px) {
+    //   display: none;
+    // }
   }
 }
 
