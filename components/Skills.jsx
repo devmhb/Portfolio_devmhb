@@ -72,7 +72,7 @@ const Skills = () => {
             </div>
             <div className={styles.skill_card}>
               <h2 className={styles.sub_title}>Frameworks</h2>
-              <p>Tailwind</p>
+              <p>Tailwind Next.js</p>
             </div>
           </div>
         </div>
