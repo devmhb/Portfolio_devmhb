@@ -6,7 +6,7 @@ export const data = [
   {
     image: project1,
     uses: "HTML SASS Next.js Hypergraph",
-    title: "Blog Application",
+    title: "Blog Log",
     link: "https://blog-log.netlify.app",
   },
   {

@@ -2,9 +2,11 @@
 @import "../variables";
 
 .navbar {
+  position: sticky;
+  top: 0%;
+  background-color: $background;
+  z-index: 99999999999;
   .nav_wrapper {
-    position: sticky;
-    top: 10;
     @include flex;
     width: 100%;
     height: 80px;

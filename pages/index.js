@@ -6,6 +6,8 @@ import ProjectsCard from "../components/ProjectsCard";
 import Skills from "../components/Skills";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -19,13 +21,20 @@ export default function Home() {
       <div>
         <Layout>
           <Hero />
-          <ProjectsCard viewAll={<button>View All ⇢</button>} slashOrHash="#" />
+          <ProjectsCard
+            viewAll={
+              <button>
+                View All <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            }
+            slashOrHash="#"
+          />
           <Skills />
           <About
             slashOrHash="#"
             readMore={
               <button className={`${styles.btn} btn btnBorder`}>
-                Read more ⇢
+                Read more <FontAwesomeIcon icon={faArrowRight} />
               </button>
             }
           />
