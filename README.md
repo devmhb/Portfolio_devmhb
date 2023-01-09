@@ -70,7 +70,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Mehedi Hasan - [@portfoilo](https://devmhb.netlify.app/) - mehedibuiyan734@gmail.com
+Mehedi Hasan - [@portfoilo](https://devmhb.netlify.app/) - devmhbbd@gmail.com
 
 Project Link: [https://github.com/devmhb/portfolio-devmhb](https://github.com/portfolio-devmhb/blog-log)
 
