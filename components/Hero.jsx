@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/components/Hero.module.scss";
 import Outline from "../images/logo secondary.svg";
 import Dots from "../images/Dots.png";
-import heroImg from "../images/hero_img.png";
+import heroImg from "../images/hero_img.svg";
 import comma from "../images/“.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -33,7 +33,7 @@ const Hero = () => {
       <div className={styles.hero_wrapper}>
         <div className={styles.row_left}>
           <h1 className={styles.title}>
-            Mehedi is a<span> front-end </span>
+            I'm a<span> front-end </span>
             developer.
           </h1>
           <p className={styles.desc}>
@@ -83,18 +83,20 @@ const Hero = () => {
       <div className={styles.quote_wrapper}>
         <div className={styles.quote}>
           <fieldset>
-            <legend>
-              <Image src={comma} height="" width="" alt="comma" />
+            <legend
+              style={{
+                color: "#c778dd",
+                fontFamily: "Fira Code",
+                fontSize: "5rem",
+                lineHeight: "0.1",
+              }}
+            >
+              "
             </legend>
-            <p>With great power comes great electricity bill</p>
-          </fieldset>
-        </div>
-        <div className={styles.quote_writer}>
-          <fieldset>
-            <legend>
-              <Image src={comma} height="" width="" alt="comma" />
-            </legend>
-            <p>-Dr.Who</p>
+            <p>
+              Copy-and-Paste was programmed by programmers for programmers
+              actually.
+            </p>
           </fieldset>
         </div>
       </div>

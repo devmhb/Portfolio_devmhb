@@ -3,7 +3,10 @@ import Link from "next/link";
 import styles from "../styles/components/Contact.module.scss";
 import Image from "next/image";
 import Email from "../images/Email.png";
-import { faMobileRetro } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
@@ -34,14 +37,14 @@ const Contact = ({ slashOrHash }) => {
         <div className={styles.row_right}>
           <h3>Message me here</h3>
           <div className={styles.media_con}>
-            <Image src={Email} alt="email" height="" width="" />
-            <a href="mailto:mehedibuiyan734@gmail.com">
-              mehedibuiyan734@gmail.com
-            </a>
+            <p>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </p>
+            <a href="mailto:devmhbbd@gmail.com">devmhbbd@gmail.com</a>
           </div>
           <div className={styles.media_con}>
             <p>
-              <FontAwesomeIcon icon={faMobileRetro} />
+              <FontAwesomeIcon icon={faPhone} />
             </p>
             <a href="tel:+8801910819923">+88019108-19923</a>
           </div>

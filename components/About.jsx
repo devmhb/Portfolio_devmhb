@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "../styles/components/About.module.scss";
 import Image from "next/image";
-import Me from "../images/jc-gellidon-E3NUmCScugo-unsplash-removebg-preview(1) 1.png";
+import Me from "../images/hero_img.svg";
 import Dots from "../images/Dots.png";
 import { motion } from "framer-motion";
 
@@ -66,13 +66,13 @@ const About = ({ slashOrHash, readMore }) => {
             alt="dots"
             className={styles.dots2}
           />
-          <Image
+          {/* <Image
             src={Dots}
             height=""
             width=""
             alt="dots"
             className={styles.dots3}
-          />
+          /> */}
         </div>
       </div>
     </motion.div>

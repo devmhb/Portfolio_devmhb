@@ -12,6 +12,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        color: white;
       }
       .desc {
         line-height: 1.7rem;
@@ -27,6 +28,11 @@
         a {
           margin-left: 1rem;
           color: $gray;
+          transition: color 300ms;
+
+          &:hover {
+            color: $purple;
+          }
         }
       }
     }

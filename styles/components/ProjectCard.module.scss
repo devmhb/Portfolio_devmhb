@@ -7,10 +7,20 @@
   gap: 3rem;
   .card_wrapper {
     border: 1px solid $gray;
+    transition: border 300ms;
+    flex: 0 350px;
+
+    &:hover {
+      border: 1px solid $purple;
+
+      .title {
+        color: $purple;
+      }
+    }
     .img_con {
       img {
         width: 100%;
-        height: 185px;
+        height: fit-content;
         @include borderBottom;
         padding-bottom: 0;
         @media (min-width: 968px) {
@@ -19,12 +29,13 @@
       }
     }
     .card_info {
-      padding: 1rem;
+      padding: 0.5rem;
       .uses_lan {
         width: 100%;
         @include borderBottom;
       }
       .title {
+        transition: color 300ms;
       }
       .desc {
       }

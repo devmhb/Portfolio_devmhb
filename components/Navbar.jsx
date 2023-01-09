@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className={styles.logo_con}>
             <div className={styles.logo}>
               <Image src={logo} width="16" height="16" alt="logo" />
-              <h1 className={styles.author}>Mehedi</h1>
+              <h1 className={styles.author}>Mehedi Hasan</h1>
             </div>
           </div>
         </Link>

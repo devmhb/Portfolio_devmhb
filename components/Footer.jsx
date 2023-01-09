@@ -14,12 +14,14 @@ const Footer = () => {
     <div className={styles.footer_con}>
       <div className={styles.footer_wrapper}>
         <div className={styles.row_left}>
-          <div className={styles.logo_con}>
-            <Image src={logo} height="20" width="20" alt="logo" />
-            <h3>Mehedi</h3>
-          </div>
+          <Link href="/">
+            <div className={styles.logo_con}>
+              <Image src={logo} height="20" width="20" alt="logo" />
+              <h3>Mehedi Hasan</h3>
+            </div>
+          </Link>
 
-          <div className={styles.desc}>Mehedi is a front end developer</div>
+          <div className={styles.desc}>Front-End developer</div>
         </div>
 
         <div className={styles.row_right}>
@@ -39,7 +41,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className={styles.copyright}>© Copyright 2022. Made by Mehedi</p>
+      <p className={styles.copyright}>
+        © Copyright 2022. Developed by Mehedi Hasan
+      </p>
     </div>
   );
 };

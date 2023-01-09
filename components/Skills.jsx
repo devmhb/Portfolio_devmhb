@@ -57,22 +57,22 @@ const Skills = () => {
           <div>
             <div className={styles.skill_card}>
               <h2 className={styles.sub_title}>Languages</h2>
-              <p>HTML CSS JavaScript</p>
+              <p>HTML CSS/Sass JavaScript</p>
             </div>
             <div className={styles.skill_card}>
-              <h2 className={styles.sub_title}>Tools</h2>
-              <p> Sass VSCode Git GitHub Font-Awesome Google-Fonts Figma</p>
+              <h2 className={styles.sub_title}>Tools & Softwares</h2>
+              <p> VSCode Git GitHub npm yarn Font-Awesome Google-Fonts Figma</p>
             </div>
           </div>
 
           <div>
             <div className={styles.skill_card}>
-              <h2 className={styles.sub_title}>Libraries</h2>
-              <p>React</p>
+              <h2 className={styles.sub_title}>FE related</h2>
+              <p>React.js Next.js GraphQL Framer-Motion Firebase</p>
             </div>
             <div className={styles.skill_card}>
-              <h2 className={styles.sub_title}>Frameworks</h2>
-              <p>Tailwind Next.js</p>
+              <h2 className={styles.sub_title}>UI related</h2>
+              <p>Tailwind-CSS Material-UI Chakra-UI</p>
             </div>
           </div>
         </div>

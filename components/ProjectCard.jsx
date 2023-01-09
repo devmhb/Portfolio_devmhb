@@ -15,7 +15,7 @@ const ProjectCard = () => {
           <div className={styles.card_info}>
             <p className={styles.uses_lan}>{data?.uses}</p>
             <h1 className={styles.title}>{data.title}</h1>
-            <p className={styles.desc}>{data?.subTitle}</p>
+            <p className={styles.desc}>{data?.desc}</p>
             <div className={styles.btn_con}>
               <Link href={data?.link} target="_blank">
                 <button className={`${styles.btn} btn btnBorder`}>
