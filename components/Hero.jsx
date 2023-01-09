@@ -33,7 +33,7 @@ const Hero = () => {
       <div className={styles.hero_wrapper}>
         <div className={styles.row_left}>
           <h1 className={styles.title}>
-            I'm a<span> front-end </span>
+            I am a<span> front-end </span>
             developer.
           </h1>
           <p className={styles.desc}>
@@ -91,7 +91,7 @@ const Hero = () => {
                 lineHeight: "0.1",
               }}
             >
-              "
+              <Image src={comma} height="20" width="20" alt="comma" />
             </legend>
             <p>
               Copy-and-Paste was programmed by programmers for programmers
