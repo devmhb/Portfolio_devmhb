@@ -93,7 +93,7 @@ const Hero = () => {
             >
               <Image src={comma} height="20" width="20" alt="comma" />
             </legend>
-            <p>
+            <p className={styles.quote_text}>
               Copy-and-Paste was programmed by programmers for programmers
               actually.
             </p>

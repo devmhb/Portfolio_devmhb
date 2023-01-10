@@ -15,7 +15,7 @@ export const data = [
     uses: " React.js Next.js JavaScript Sass Sanity Stripe",
     title: "ElectroSmooth",
     // desc: "Here you find different kinds of interesting tech gadgets and regular tech gadgets like laptops, headphone, speakers with best deals.",
-    link: "https://ecommerce-devmhb.netlify.app",
+    link: "https://electrosmooth.netlify.app/",
   },
   // {
   //   image: project3,

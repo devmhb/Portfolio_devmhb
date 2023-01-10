@@ -4,6 +4,7 @@
 .hero_con {
   max-width: 100%;
   .hero_wrapper {
+    min-height: 50vh;
     display: flex;
     gap: 0;
     flex-flow: row wrap;
@@ -68,17 +69,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     .quote {
       fieldset {
         display: inline-block;
       }
-    }
-    .quote_writer {
-      text-align: right;
-      margin-top: -0.9rem;
-      fieldset {
-        border: 1px solid;
+
+      .quote_text {
+        font-size: 1.2rem;
+        @media screen and (max-width: 668px) {
+          font-size: 1rem;
+          margin: 0;
+        }
       }
     }
   }
