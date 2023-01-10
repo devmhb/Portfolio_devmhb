@@ -72,7 +72,7 @@ Don't forget to give the project a star! Thanks again!
 
 Mehedi Hasan - [@portfoilo](https://devmhb.netlify.app/) - devmhbbd@gmail.com
 
-Project Link: [https://github.com/devmhb/portfolio_devmhb](https://github.com/devmhb/portfolio_devmhb)
+Project Link: [https://github.com/devmhb/portfolio-devmhb](https://github.com/devmhb/portfolio_devmhb)
 
 <p align="right"><a href="#top">⇧Back To Top</a></p>
 
