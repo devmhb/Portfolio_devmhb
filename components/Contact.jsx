@@ -3,10 +3,7 @@ import Link from "next/link";
 import styles from "../styles/components/Contact.module.scss";
 import Image from "next/image";
 import Email from "../images/Email.png";
-import {
-  faEnvelope,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
@@ -30,8 +27,9 @@ const Contact = ({ slashOrHash }) => {
       <div className={styles.contact_wrapper}>
         <div className={styles.row_left}>
           <p className={styles.desc}>
-            I’m interested in freelance opportunities. However, if you have
-            other request or question, don’t hesitate to contact me
+            A self-motivated and hardworking programmer, seeking an opportunity
+            to work in a challenging environment to prove my skills and utilize
+            my analytical ability in the growth of the organization.
           </p>
         </div>
         <div className={styles.row_right}>
